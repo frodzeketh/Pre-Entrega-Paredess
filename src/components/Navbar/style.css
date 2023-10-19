@@ -1,0 +1,60 @@
+/* Estilos para la lista de navegación */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+
+
+
+.menu {
+    width: 100%;
+    margin-top: 55px;
+    height: 50px;
+    background-image: linear-gradient(to right, #F94F66, #FA555F, #FA5E57, #FB6155, #FB6650, #FB694E, #FC7344);
+}
+
+.lista {
+    list-style: none;
+    padding: 0 30px;
+    margin: 0;
+    text-align: center; /* Centra el texto horizontalmente */
+    
+    
+    
+
+
+}
+
+/* Estilos para los elementos de la lista */
+.opciones {
+    display: inline-block; /* Muestra los elementos en la misma línea horizontal */
+    margin-right: 50px; /* Espaciado entre los elementos */
+    margin-left: 50px;
+    line-height: 50px; /* Centra el texto verticalmente */
+    
+}
+
+.separator {
+    display: inline-block;
+    margin: 0 5px; /* Espaciado entre los separadores */
+    color: white; /* Color de las barras verticales (|) */
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+}
+
+/* Estilos para los enlaces */
+.opciones a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-family: "Inter", sans-serif;
+}
+
+
+.opciones a:hover {
+    color: #e5e5e5; /* Cambia el color al pasar el mouse a gris claro */
+}
+
+.Carrito {
+    display: flex; /* Utilizamos Flexbox para alinear elementos horizontalmente */
+    justify-content: flex-end; /* Alinea el contenido a la derecha del contenedor */
+    
+}
