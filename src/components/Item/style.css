@@ -1,0 +1,33 @@
+.card-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .card-description p {
+    font-size: 14px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+  
+  .price {
+    font-size: 16px;
+    color: #ff5722; /* Puedes cambiar el color según tus preferencias */
+    margin: 10px 0;
+  }
+  

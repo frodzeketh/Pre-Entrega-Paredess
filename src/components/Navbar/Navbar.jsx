@@ -1,6 +1,6 @@
 import './style.css'
 import Button from 'react-bootstrap/Button';
-import CartWidget from '../CartWidget/CartWidget';
+
 
 
 const Navbar = () => {
@@ -23,9 +23,7 @@ const Navbar = () => {
         </ul>      
 
         
-        <div className='Carrito'>
-                <CartWidget/>
-            </div>
+        
 
             <div>
                 <Button> Botton Bootstrap </Button>
