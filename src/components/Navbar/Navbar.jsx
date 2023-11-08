@@ -8,20 +8,20 @@ const Navbar = () => {
         <div className="menu">
             <ul className="lista">
                 <li className="opciones">
-                    <Link to="/category/indumentaria" className="opciones">
+                    <Link to="/category/clothing" className="opciones">
                         Indumentaria
                     </Link>
                 </li>
                 <li className="separator">|</li>
                 <li className="opciones">
-                    <Link to="/category/pelotas" className="opciones">
-                        Pelotas
+                    <Link to="/category/relojes" className="opciones">
+                        Relojes
                     </Link>
                 </li>
                 <li className="separator">|</li>
                 <li className="opciones">
-                    <Link to="/category/Calzado" className="opciones">
-                        Calzado
+                    <Link to="/category/electronics" className="opciones">
+                        Tecnologia
                     </Link>
                 </li>
             </ul>

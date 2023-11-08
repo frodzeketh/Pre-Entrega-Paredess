@@ -1,25 +1,31 @@
-import ItemDetail from "../../components/ItemDetail/ItemDetail"
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
+import ItemDetail from "../../components/ItemDetail/ItemDetail"; // Corregir la importación
 
 const ItemDetailContainer = () => {
-    const [product, setProduct] = useState({});
-    const { id } = useParams ();
+  const [itemSelected, setItemSelected] = useState(null);
+  const { id } = useParams();
 
-    const fetchProduct = () => {
-      fetch(`https://fakestoreapi.com/products/${id}`)
-        .then ((response) => response.json())
-        .then ((data) => setProduct(data)) 
-        .catch ((error) => console.log(error));
-    };
+  const fetchProduct = () => {
+    fetch(`https://fakestoreapi.com/products/${id}`)
+      .then((res) => res.json())
+      .then((data) => setItemSelected(data))
+      .catch((err) => console.log(err));
+  };
 
-    useEffect(() => {
-        fetchProduct();
-    }, []);
+  useEffect(() => {
+    fetchProduct();
+  }, []);
 
   return (
-    <ItemDetail itemSelected={product}/>
+    <div>
+      {id && (
+        <div className="item-detail-container">
+          <ItemDetail itemSelected={itemSelected} />
+        </div>
+      )}
+    </div>
   );
-};
+}
 
-export default ItemDetailContainer
+export default ItemDetailContainer;
