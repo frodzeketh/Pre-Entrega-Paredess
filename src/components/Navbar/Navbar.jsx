@@ -25,9 +25,7 @@ const Navbar = () => {
         
         
 
-            <div>
-                <Button> Botton Bootstrap </Button>
-            </div>
+            
         </div>
 
         
