@@ -3,6 +3,7 @@ import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Item from "./components/Item/Item";
 import { Nav } from "react-bootstrap";
+import ItemDetailContainer from "./pages/ItemDetailContainer/ItemDetailContainer";
 
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
      <NavBar/>
         <Routes>
               <Route path="/" element={<ItemListContainer/>} />
+              <Route path="/category/:id" element={<ItemListContainer/>} />
+              <Route path="/item/:id" element={<ItemDetailContainer/>} />
               
               
         </Routes>
@@ -25,5 +28,3 @@ function App() {
 }
 
 export default App;
-
-

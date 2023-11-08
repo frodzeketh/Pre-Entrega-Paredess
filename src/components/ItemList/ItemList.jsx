@@ -1,12 +1,13 @@
 import './style.css'
 import Item from "../Item/Item";
+import { Link } from 'react-router-dom';
 
 
 const ItemList = ({ productList }) => {
   return (
     <div className="item-list-container">
       {productList.map((product) => (
-            <div key={product.id}>
+            <Link to={'item/' + product.id}  key={product.id}>
                 <Item
                 
                 title={product.title}
@@ -16,10 +17,11 @@ const ItemList = ({ productList }) => {
                 />
 
 
-            </div>
+            </Link>
             ))
     }
-    </div>);
+    </div>
+    );
   
 };
 
